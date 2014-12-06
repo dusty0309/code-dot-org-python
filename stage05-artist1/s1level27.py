@@ -16,6 +16,7 @@ artist = codestudio.load('s1level27')
 
 for count in range(3):
     artist.color = artist.random_color()
-    # ???
+    artist.move_forward(100)
+    artist.turn_right(120)
     
 artist.check()

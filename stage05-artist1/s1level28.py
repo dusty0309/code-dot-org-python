@@ -10,7 +10,17 @@ sys.path.append('..')
 import codestudio
 artist = codestudio.load('s1level28')
 
+artist.speed = 'slowest'
+
 for count in range(3):
-    pass                                         # ???
+    artist.move_forward(100)
+    artist.turn_right(120)
+
+artist.turn_right(90)
+
+for count in range(4):
+    artist.move_forward(100)
+    artist.turn_left(90)
+
 
 artist.check()
